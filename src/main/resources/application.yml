@@ -1,0 +1,36 @@
+server:
+  port: 8880
+  servlet:
+    context-path: /HIS
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: lvlight
+    url: jdbc:mysql://localhost:3306/hisdb
+    username: root
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+    hibernate:
+      ddl-auto: update  
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+# these below smtp properties for sending the mail from spring boot app
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: pprem6672@gmail.com
+    password: czbwryagnnwrrilf    
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          starttls:
+            enable: true
+          timeout: 5000
+          writetimeout: 5000      
