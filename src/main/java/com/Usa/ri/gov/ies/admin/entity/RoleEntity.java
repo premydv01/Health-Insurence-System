@@ -1,4 +1,4 @@
-package com.pky.entity;
+package com.Usa.ri.gov.ies.admin.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

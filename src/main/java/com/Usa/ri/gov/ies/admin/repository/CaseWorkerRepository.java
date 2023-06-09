@@ -1,10 +1,10 @@
-package com.pky.repository;
+package com.Usa.ri.gov.ies.admin.repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.pky.entity.CaseWorkerEntity;
+import com.Usa.ri.gov.ies.admin.entity.CaseWorkerEntity;
 
 public interface CaseWorkerRepository extends JpaRepository<CaseWorkerEntity, Integer>{
 	

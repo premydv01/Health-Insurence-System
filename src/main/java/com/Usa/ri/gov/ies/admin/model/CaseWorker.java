@@ -1,4 +1,4 @@
-package com.pky.model;
+package com.Usa.ri.gov.ies.admin.model;
 
 import java.util.Date;
 

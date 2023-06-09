@@ -1,4 +1,4 @@
-package com.pky.utils;
+package com.Usa.ri.gov.ies.utils;
 
 public class PwdUtils {
 	private static final String ALPHA_NUMERIC_STRING="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";

@@ -1,4 +1,4 @@
-package com.pky.utils;
+package com.Usa.ri.gov.ies.utils;
 
 
 import java.io.BufferedReader;
@@ -13,8 +13,8 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
 
-import com.pky.entity.CaseWorkerEntity;
-import com.pky.model.CaseWorker;
+import com.Usa.ri.gov.ies.admin.entity.CaseWorkerEntity;
+import com.Usa.ri.gov.ies.admin.model.CaseWorker;
 
 
 @Component

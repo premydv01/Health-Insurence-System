@@ -1,6 +1,6 @@
 Hi  {FNAME}, {LNAME} :
 <br/>
-Welcome to PSW family , Your registration is almost completed. please use below details to unlock
+Welcome to HIS family , Your registration is almost completed. please use below details to unlock
 </br>
 
 Temporary Password :{TEMP-PWD}</br>
@@ -9,4 +9,4 @@ Temporary Password :{TEMP-PWD}</br>
 Click Here to unlock Your Account</a> </br>
 </br>
 Thanks & Regards,</br>
-PSW Team.</br>
+HIS Team.</br>

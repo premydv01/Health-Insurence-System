@@ -1,4 +1,4 @@
-package com.pky.controller;
+package com.Usa.ri.gov.ies.admin.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.pky.entity.CaseWorkerEntity;
-import com.pky.model.CaseWorker;
-import com.pky.model.UnlockAccount;
-import com.pky.service.CaseWorkerService;
+import com.Usa.ri.gov.ies.admin.entity.CaseWorkerEntity;
+import com.Usa.ri.gov.ies.admin.model.CaseWorker;
+import com.Usa.ri.gov.ies.admin.model.UnlockAccount;
+import com.Usa.ri.gov.ies.admin.service.AdminService;
 
 @Controller
-public class UnlockCaseWorkerController {
+public class UnlockAccountController {
 	@Autowired
-	private CaseWorkerService service;
+	private AdminService service;
 	
 	@GetMapping(value = "/unlockAcc")
 	public String loadUnlockCaseWorkerForm(@RequestParam("email") String email,Model model) {
@@ -30,10 +30,10 @@ public class UnlockCaseWorkerController {
 	
 	@PostMapping(value = "/unlockAcc")
 	public String unlockCaseWorkerAccount(@ModelAttribute("unlock")UnlockAccount account, Model model) {
-		    CaseWorker cw=service.getCaseWorkerByEmailAndUserPwd(account.getEmail(),account.getTempPwd());
+		    CaseWorker cw=service.getAccountByEmailAndUserPwd(account.getEmail(),account.getTempPwd());
 		  if(cw!=null) {
 			  cw.setUserPwd(account.getConfirmPwd());
-			 boolean isUpdate= service.updateCaseWorkerAccount(cw);
+			 boolean isUpdate= service.updateAccount(cw);
 			  if(isUpdate) {
 			  model.addAttribute("msg","Account Unlocked Successfully");
 			 }
